@@ -2,10 +2,8 @@ input.onButtonPressed(Button.A, function () {
     control.reset()
 })
 radio.onReceivedString(function (receivedString) {
-    if (receivedString == "go") {
-        basic.showIcon(IconNames.Yes)
-        debute = 2
-    }
+    basic.showIcon(IconNames.Yes)
+    debute = 2
 })
 let debute = 0
 radio.setGroup(1)
@@ -17,4 +15,5 @@ basic.forever(function () {
         radio.sendValue("y", input.acceleration(Dimension.Y))
         radio.sendValue("z", input.acceleration(Dimension.Z))
     }
+    basic.pause(10)
 })
