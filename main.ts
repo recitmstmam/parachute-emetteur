@@ -1,5 +1,6 @@
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "go") {
+        basic.pause(2000)
         basic.showIcon(IconNames.Yes)
         debute = 2
     } else {
