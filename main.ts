@@ -1,9 +1,11 @@
-input.onButtonPressed(Button.A, function () {
-    control.reset()
-})
 radio.onReceivedString(function (receivedString) {
-    basic.showIcon(IconNames.Yes)
-    debute = 2
+    if (receivedString == "go") {
+        basic.showIcon(IconNames.Yes)
+        debute = 2
+    } else {
+        basic.showIcon(IconNames.No)
+        debute = 0
+    }
 })
 let debute = 0
 radio.setGroup(1)
