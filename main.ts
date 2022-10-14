@@ -3,7 +3,6 @@ input.onButtonPressed(Button.A, function () {
 })
 radio.onReceivedString(function (receivedString) {
     basic.showIcon(IconNames.Yes)
-    basic.pause(1000)
     debute = 2
 })
 let debute = 0
