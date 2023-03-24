@@ -14,9 +14,7 @@ debute = 0
 basic.showIcon(IconNames.No)
 basic.forever(function () {
     while (debute == 2) {
-        radio.sendValue("x", input.acceleration(Dimension.X))
         radio.sendValue("y", input.acceleration(Dimension.Y))
-        radio.sendValue("z", input.acceleration(Dimension.Z))
     }
     basic.pause(10)
 })
